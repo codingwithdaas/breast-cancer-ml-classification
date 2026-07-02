@@ -2,7 +2,7 @@
 The Role of AI and Bioinformatics in Early Disease Diagnosis
 Project: Breast Cancer Diagnosis Classification using ML
 Dataset: Wisconsin Diagnostic Breast Cancer (WDBC) via scikit-learn
-Author: [Your Name]
+Author: Keerat Singh
 """
 
 import numpy as np
