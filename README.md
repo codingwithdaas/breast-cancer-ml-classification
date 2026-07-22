@@ -24,7 +24,7 @@ Wisconsin Diagnostic Breast Cancer (WDBC) dataset — 569 samples, 30 numeric fe
 | KNN (k=5) | 0.9674 | 0.9591 | 0.9386 | 1.0000 | 0.9683 | 0.9827 |
 | Random Forest | 0.9623 | 0.9357 | 0.9444 | 0.9533 | 0.9488 | 0.9913 |
 
-**Logistic Regression performed best** overall (98.83% test accuracy, AUC = 0.998), with only 2 total misclassifications out of 170 test cases. **KNN achieved perfect recall**, catching every malignant case in the test set, at the cost of more false positives — illustrating the precision/recall trade-off relevant to diagnostic screening.
+**Logistic Regression performed best** overall (98.83% test accuracy, AUC = 0.998), with only 2 total misclassifications out of 171 test cases. **KNN achieved perfect recall**, catching every malignant case in the test set, at the cost of more false positives — illustrating the precision/recall trade-off relevant to diagnostic screening.
 
 The most predictive features (via Random Forest) were related to nuclear size and shape irregularity — *worst concave points*, *worst area*, and *worst perimeter* — consistent with known pathology of malignant cell morphology. PCA showed malignant and benign cases form largely separable clusters in just 2 dimensions, capturing 63.24% of total variance.
 
