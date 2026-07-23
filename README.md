@@ -1,12 +1,12 @@
 # Breast Cancer Diagnosis Classification
 
-Machine learning classifier for breast cancer diagnosis using cell morphology features from the Wisconsin Diagnostic Breast Cancer dataset. Compares Logistic Regression, Random Forest, SVM, and KNN, achieving 98.8% test accuracy with Logistic Regression (AUC = 0.998).
+Machine learning (ML) classifier for breast cancer diagnosis using cell morphology features from the Wisconsin Diagnostic Breast Cancer dataset. Compares Logistic Regression, Random Forest, SVM, and KNN, achieving 98.8% test accuracy with Logistic Regression (AUC = 0.998).
 
-Built as part of a research project on AI and bioinformatics in early disease diagnosis.
+Built as part of the Teens in Health AI and Bioinformatics summer cohort, to support a research article submitted for publication in the Teens in Health journal.
 
 ## Dataset
 
-Wisconsin Diagnostic Breast Cancer (WDBC) dataset — 569 samples, 30 numeric features describing nuclear size, shape, and texture, extracted from digitized fine needle aspirate (FNA) biopsy images. Accessed via scikit-learn's `load_breast_cancer()`.
+[Wisconsin Diagnostic Breast Cancer (WDBC) dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic) — 569 samples, 30 numeric features describing nuclear size, shape, and texture, extracted from digitized fine needle aspirate (FNA) biopsy images. Accessed via scikit-learn's `load_breast_cancer()`.
 
 ## Methods
 
@@ -38,7 +38,7 @@ Python, scikit-learn, pandas, NumPy, matplotlib, seaborn
 - **Pre-extracted features, not raw images.** This pipeline classifies based on numbers that were already computed from microscope images — it doesn't address the harder real-world task of extracting those features from raw image data.
 - **No external validation set.** Performance was measured on a held-out test split from the same dataset, not on independent data from a different source, so reported accuracy may be somewhat optimistic.
 - **Binary classification only.** Real diagnosis involves more nuance than malignant/benign (e.g., cancer subtype, stage), which this model doesn't address.
-- **No clinical/demographic context.** The model uses only cell morphology — it doesn't incorporate patient age, family history, or genetic risk factors that a real diagnostic pipeline would typically consider.
+- **No clinical/demographic context.** The model uses only cell morphology; it doesn't incorporate patient age, family history, or genetic risk factors that a real diagnostic pipeline would typically consider.
 - **Proof-of-concept, not clinical tool.** This project demonstrates that AI can detect meaningful patterns in diagnostic data; it has not been validated for real-world clinical use.
 
 ## Future Work
