@@ -180,6 +180,7 @@ plt.close()
 rf_model = models["Random Forest"]
 importances = pd.Series(rf_model.feature_importances_, index=X.columns)
 top_features = importances.sort_values(ascending=False).head(10)
+top_features.index.name = "Feature"
 
 plt.figure(figsize=(7, 5))
 sns.barplot(x=top_features.values, y=top_features.index, hue=top_features.index,
