@@ -2,7 +2,7 @@
 
 Machine learning (ML) classifier for breast cancer diagnosis using cell morphology features from the Wisconsin Diagnostic Breast Cancer dataset. Compares Logistic Regression, Random Forest, SVM, and KNN, achieving 98.8% test accuracy with Logistic Regression (AUC = 0.998).
 
-Built as part of the Teens in Health AI and Bioinformatics summer cohort, to support a research article submitted for publication in the Teens in Health journal.
+Built as part of the Teens in Health - AI and Bioinformatics summer cohort, to support a research article submitted for publication in the Teens in Health journal.
 
 ## Dataset
 
